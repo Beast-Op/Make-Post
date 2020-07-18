@@ -148,6 +148,7 @@ function DynamicText(img) {
   document.getElementById('inpu').addEventListener('keyup', function() {
     ctx.clearRect(0, 0, c.width, c.height);
     DrawOverlay(img);
+    all();
     DrawText(); 
     input.value = this.value;
     ctx.fillText(input.value, 80, 80);
