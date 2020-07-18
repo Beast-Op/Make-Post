@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="make.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,800;1,400;1,600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<label for="inpu" placeholder="Enter Mobile Name"> Enter Name Of Product / Topic</label>
+<input id="inpu"  type="text"> 
+
+<br>
+<label for="inputa"  placeholder="Display Size + Type + Hz">Display</label>
+<input id="inputa"  type="text"> 
+<br>
+<label for="inputb" >Processor</label>
+<input id="inputb"  type="text"> 
+<br>
+<label for="inputc" >Camera (main)</label>
+<input id="inputc"  type="text">
+<br>
+<label for="inputd" >Camera (Front) / Selife</label>
+<input id="inputd"  type="text">
+<br>
+<label for="inpute" >Storage</label>
+<input id="inpute"  type="text"> 
+<br> 
+<label for="inputf" >Ram ........</label>
+<input id="inputf"  type="text"> 
+<br>
+<label for="inputg" >Battery</label>
+<input id="inputg"  type="text">  
+<br>
+<label for="inputh" >Fast Charging</label>
+<input id="inputh"  type="text"> 
+<br>
+<label for="inputi" >Price........</label>
+<input id="inputi"  type="text"> 
+<br>
+<label for="inputj" >Additional Information</label>
+<input id="inputj"  type="text">
+<br>
+<br>
+
+
+
+
+
+<canvas id="myCanvas" width="1200" height="1200">
+Your browser does not support the HTML5 canvas tag</canvas>
+
+<br>
+
+<input id="" onchange="previewImage(this)" type="file">
+
+<img id="preview">
+
+<p> Enter x Cordinate  <input id="x"> </p>
+<p> Enter y Cordinate  <input id="y"> </p>
+<p> Enter Width  <input id="width"> </p>
+<p> Enter Height  <input id="Height"> </p>
+
+
+<p> <button onclick="setImage()">Set Image </button> </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+document.body.style.zoom = 0.5;
+
+function previewImage(input){
+	var reader = new FileReader();
+	reader.onload = function (e){
+		document.getElementById("preview").setAttribute("src",e.target.result);
+	};
+	reader.readAsDataURL(input.files[0]);
+}
+
+var imgPath = 'latest spec post.jpg';
+var img = new Image();
+img.src = imgPath;
+var x = 0;
+var y = 0;
+
+
+
+var input = document.getElementById("inpu");
+var input1 = document.getElementById("inputa");
+var input2 = document.getElementById("inputb");
+var input3 = document.getElementById("inputc");
+var input4 = document.getElementById("inputd");
+var input5 = document.getElementById("inpute");
+var input6 = document.getElementById("inputf");
+var input7 = document.getElementById("inputg");
+var input8 = document.getElementById("inputh");
+var input9 = document.getElementById("inputi");
+var input10 = document.getElementById("inputj");
+
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+window.addEventListener('load', DynamicText);
+window.addEventListener('load', DynamicText1)
+window.addEventListener('load', DynamicText2)
+window.addEventListener('load', DynamicText3)
+window.addEventListener('load', DynamicText4)
+window.addEventListener('load', DynamicText5)
+window.addEventListener('load', DynamicText6)
+window.addEventListener('load', DynamicText7)
+window.addEventListener('load', DynamicText8)
+window.addEventListener('load', DynamicText9)
+window.addEventListener('load', DynamicText10)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+img.onload = function(){
+   ctx.drawImage(img, x, y);
+
+}
+
+
+
+function DynamicText(img) {
+  document.getElementById('inpu').addEventListener('keyup', function() {
+    ctx.clearRect(0, 0, c.width, c.height);
+    DrawOverlay(img);
+    DrawText(); 
+    input.value = this.value;
+    ctx.fillText(input.value, 80, 80);
+  });
+}
+
+function all() {
+DrawText();
+  DrawText1();
+  DrawText2();
+  DrawText3();
+  DrawText4();
+    DrawText5();
+    DrawText6();
+    DrawText7();
+    DrawText8();
+    DrawText9();
+    DrawText10();
+	
+}
+
+function all2() {
+DrawText();
+  DrawText1();
+  DrawText2();
+  DrawText3();
+  DrawText4();
+    DrawText5();
+    DrawText6();
+    DrawText7();
+    DrawText8();
+    DrawText9();
+    DrawText10();
+	
+}
+function all3() {
+DrawText();
+  DrawText1();
+  DrawText2();
+  DrawText3();
+  DrawText4();
+    DrawText5();
+    DrawText6();
+    DrawText7();
+    DrawText8();
+    DrawText9();
+    DrawText10();
+	
+}
+
+function all4() {
+DrawText();
+  DrawText1();
+  DrawText2();
+  DrawText3();
+  DrawText4();
+    DrawText5();
+    DrawText6();
+    DrawText7();
+    DrawText8();
+    DrawText9();
+    DrawText10();
+	
+}
+
+function all5() {
+DrawText();
+  DrawText1();
+  DrawText2();
+  DrawText3();
+  DrawText4();
+    DrawText5();
+    DrawText6();
+    DrawText7();
+    DrawText8();
+    DrawText9();
+    DrawText10();
+  
+}
+
+function all6() {
+DrawText();
+  DrawText1();
+  DrawText2();
+  DrawText3();
+  DrawText4();
+    DrawText5();
+    DrawText6();
+    DrawText7();
+    DrawText8();
+    DrawText9();
+    DrawText10();
+  
+}
+
+
+function all7() {
+DrawText();
+  DrawText1();
+  DrawText2();
+  DrawText3();
+  DrawText4();
+    DrawText5();
+    DrawText6();
+    DrawText7();
+    DrawText8();
+    DrawText9();
+    DrawText10();
+  
+}
+
+
+
+function all8() {
+DrawText();
+  DrawText1();
+  DrawText2();
+  DrawText3();
+  DrawText4();
+    DrawText5();
+    DrawText6();
+    DrawText7();
+    DrawText8();
+    DrawText9();
+    DrawText10();
+  
+}
+
+
+function all9() {
+  DrawText();
+  DrawText1();
+  DrawText2();
+  DrawText3();
+  DrawText4();
+    DrawText5();
+    DrawText6();
+    DrawText7();
+    DrawText8();
+    DrawText9();
+    DrawText10();
+}
+
+
+function all10() {
+  DrawText();
+  DrawText1();
+  DrawText2();
+  DrawText3();
+  DrawText4();
+    DrawText5();
+    DrawText6();
+    DrawText7();
+    DrawText8();
+    DrawText9();
+  
+}
+
+
+
+function DrawText() {
+    ctx.fillStyle = "#3f3f44";
+    ctx.textBaseline = 'middle';
+    ctx.font = "600 46px 'Open Sans', sans-serif";
+    ctx.fillText(input.value, 80, 80);
+}
+function DrawOverlay() {
+    ctx.drawImage(img,0,0);
+    ctx.fillStyle = 'rgba(30, 144, 255, 0)';
+    ctx.fillRect(0, 0, c.width, c.height);
+}
+
+
+
+function DynamicText1(img) {
+  document.getElementById('inputa').addEventListener('keyup', function() {
+    ctx.clearRect(0, 0, c.width, c.height);
+     DrawOverlay(img);
+    all();
+    DrawText1(); 
+    input1.value = this.value;
+    ctx.fillText(input1.value,115, 194);
+  });
+}
+function DrawText1() {
+    ctx.fillStyle = "black";
+    ctx.textBaseline = 'middle';
+ ctx.font = "400 36px 'Open Sans', sans-serif";
+    ctx.fillText(input1.value, 115, 194);
+}
+
+
+
+
+function DynamicText2(img) {
+  document.getElementById('inputb').addEventListener('keyup', function() {
+    ctx.clearRect(0, 0, c.width, c.height);
+     DrawOverlay(img);
+    all2();
+    DrawText2(); 
+    input2.value = this.value;
+    ctx.fillText(input2.value,115, 280);
+  });
+}
+function DrawText2() {
+    ctx.fillStyle = "black";
+    ctx.textBaseline = 'middle';
+ ctx.font = "400 36px 'Open Sans', sans-serif";
+    ctx.fillText(input2.value, 115, 280);
+}
+
+
+function DynamicText3(img) {
+  document.getElementById('inputc').addEventListener('keyup', function() {
+    ctx.clearRect(0, 0, c.width, c.height);
+     DrawOverlay(img);
+    all3();
+    DrawText3(); 
+    input3.value = this.value;
+    ctx.fillText(input3.value,115, 360);
+  });
+}
+function DrawText3() {
+    ctx.fillStyle = "black";
+    ctx.textBaseline = 'middle';
+ ctx.font = "400 36px 'Open Sans', sans-serif";
+    ctx.fillText(input3.value, 115, 360);
+}
+
+
+function DynamicText4(img) {
+  document.getElementById('inputd').addEventListener('keyup', function() {
+    ctx.clearRect(0, 0, c.width, c.height);
+     DrawOverlay(img);
+ 
+    DrawText4(); 
+       all4();
+    input4.value = this.value;
+    ctx.fillText(input4.value,115, 445);
+  });
+}
+function DrawText4() {
+    ctx.fillStyle = "black";
+    ctx.textBaseline = 'middle';
+ ctx.font = "400 36px 'Open Sans', sans-serif";
+    ctx.fillText(input4.value, 115, 445);
+}
+
+
+function DynamicText5(img) {
+  document.getElementById('inpute').addEventListener('keyup', function() {
+    ctx.clearRect(0, 0, c.width, c.height);
+     DrawOverlay(img);
+    all5();
+    DrawText5(); 
+    input5.value = this.value;
+    ctx.fillText(input5.value,115, 533);
+  });
+}
+function DrawText5() {
+    ctx.fillStyle = "black";
+    ctx.textBaseline = 'middle';
+ ctx.font = "400 36px 'Open Sans', sans-serif";
+    ctx.fillText(input5.value, 115, 533);
+}
+
+
+
+function DynamicText6(img) {
+  document.getElementById('inputf').addEventListener('keyup', function() {
+    ctx.clearRect(0, 0, c.width, c.height);
+     DrawOverlay(img);
+    all6();
+    DrawText6(); 
+    input6.value = this.value;
+    ctx.fillText(input6.value,115, 618);
+  });
+}
+function DrawText6() {
+    ctx.fillStyle = "black";
+    ctx.textBaseline = 'middle';
+ ctx.font = "400 36px 'Open Sans', sans-serif";
+    ctx.fillText(input6.value, 115, 618);
+}
+
+function DynamicText7(img) {
+  document.getElementById('inputg').addEventListener('keyup', function() {
+    ctx.clearRect(0, 0, c.width, c.height);
+     DrawOverlay(img);
+    all7();
+    DrawText7(); 
+    input7.value = this.value;
+    ctx.fillText(input7.value,115, 705);
+  });
+}
+function DrawText7() {
+    ctx.fillStyle = "black";
+    ctx.textBaseline = 'middle';
+ ctx.font = "400 36px 'Open Sans', sans-serif";
+    ctx.fillText(input7.value, 115, 705);
+}
+
+
+
+
+function DynamicText8(img) {
+  document.getElementById('inputh').addEventListener('keyup', function() {
+    ctx.clearRect(0, 0, c.width, c.height);
+     DrawOverlay(img);
+    all8();
+    DrawText8(); 
+    input8.value = this.value;
+    ctx.fillText(input8.value,115, 778);
+  });
+}
+function DrawText8() {
+    ctx.fillStyle = "black";
+    ctx.textBaseline = 'middle';
+ ctx.font = "400 36px 'Open Sans', sans-serif";
+    ctx.fillText(input8.value, 115, 778);
+}
+
+
+function DynamicText9(img) {
+  document.getElementById('inputi').addEventListener('keyup', function() {
+    ctx.clearRect(0, 0, c.width, c.height);
+     DrawOverlay(img);
+    all9();
+    DrawText9(); 
+    input9.value = this.value;
+    ctx.fillText(input9.value,50,1013);
+  });
+}
+function DrawText9() {
+    ctx.fillStyle = "white";
+    ctx.textBaseline = 'middle';
+ ctx.font = "400 36px 'Open Sans', sans-serif";
+    ctx.fillText(input9.value, 50, 1013);
+}
+
+
+function DynamicText10(img) {
+  document.getElementById('inputj').addEventListener('keyup', function() {
+    ctx.clearRect(0, 0, c.width, c.height);
+     DrawOverlay(img);
+    all10();
+    DrawText10(); 
+    input10.value = this.value;
+    ctx.fillText(input10.value,50, 1090);
+  });
+}
+
+
+function DrawText10() {
+    ctx.fillStyle = "#434343";
+    ctx.textBaseline = 'middle';
+ ctx.font = "400 32px 'Open Sans', sans-serif";
+    ctx.fillText(input10.value, 50, 1090);
+}
+
+function setImage() {
+	var x = document.getElementById("x").value;
+	var y = document.getElementById("y").value;
+	var width = document.getElementById("width").value;
+	var height = document.getElementById("Height").value;
+
+	var images = document.getElementById("preview");
+ DrawOverlay(img);
+    all8();
+	ctx.drawImage(images, x, y, width, height);
+}
+
+//Get the canvas element by using the getElementById method.
+
+</script>
+</body>
+</html>

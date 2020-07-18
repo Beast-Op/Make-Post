@@ -1,0 +1,18 @@
+body {
+  background: #222;
+  color: #fff;
+  position: relative;
+  text-align: center;
+  font-size: 1rem;
+  font-family: sans-serif;
+  padding-bottom: 3em;
+}
+
+input{
+
+
+	height:9vh;
+	width:100vh;
+	margin:7px;
+	
+}
